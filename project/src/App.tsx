@@ -96,7 +96,7 @@ function App() {
           <div className="mb-8">
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-lg border-4 border-pink-300 transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://github.com/PedroVazN/sther/blob/main/project/src/sther.png?raw=true"
+                src="https://raw.githubusercontent.com/PedroVazN/sther/refs/heads/main/project/src/sther.png?token=GHSAT0AAAAAAC6HWYCIROXGOFBO2DAIOWMAZ6YKQZQ"
                 alt="Sther"
                 className="w-full h-full object-cover"
               />
@@ -120,12 +120,12 @@ function App() {
             </button>
           ) : (
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg mb-8 animate-fade-in">
-              <video 
-                className="w-full h-full object-cover"
-                src="https://youtube.com/shorts/gDchuVSrJaU?feature=share"
-                controls
-                autoPlay
-                playsInline
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/gDchuVSrJaU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             </div>
           )}
